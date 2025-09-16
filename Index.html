@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth; /* biar scroll halus */
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-gray-100 to-blue-50 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold tracking-wide">Freelance Web Dev</h1>
+        <nav>
+          <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:underline">Tentang</a></li>
+            <li><a href="#services" class="hover:underline">Layanan</a></li>
+            <li><a href="#contact" class="hover:underline">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section class="bg-gradient-to-r from-blue-100 to-white py-16 text-center">
+      <div class="flex flex-col items-center animate__animated animate__fadeIn">
+        <!-- Foto Hero (bulat) -->
+        <img src="assets/profil.png" alt="Foto Profil" 
+             class="w-40 h-40 rounded-full object-cover mb-6 shadow-xl border-4 border-blue-600" />
+        
+        <h2 class="text-4xl font-extrabold mb-4 text-blue-800">Hai, Saya D. Yophanci P</h2>
+        <p class="text-lg mb-6 max-w-2xl text-gray-700">
+          Seorang <span class="text-blue-600 font-semibold">Web Developer</span> freelance
+          yang siap membantu membangun website profesional untuk bisnis maupun personal branding Anda.
+        </p>
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
+          Hubungi Saya
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-6 animate__animated animate__fadeInDown">Tentang Saya</h3>
+      <p class="text-justify max-w-2xl mx-auto text-gray-700 animate__animated animate__fadeInUp">
+        Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada bidang
+        pengembangan aplikasi berbasis web. Berpengalaman dalam membuat landing page, sistem informasi sederhana, hingga website portofolio.
+        Fokus saya adalah membuat website yang responsif, cepat, dan mudah digunakan.
+      </p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-10 animate__animated animate__fadeInDown">Layanan Saya</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-2 animate__animated animate__zoomIn">
+            <h4 class="text-xl font-semibold mb-3">Landing Page</h4>
+            <p>Saya membantu membuat halaman landing page menarik untuk mempromosikan bisnis, produk, atau jasa Anda.</p>
+          </div>
+          <!-- Service 2 -->
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-2 animate__animated animate__zoomIn animate__delay-1s">
+            <h4 class="text-xl font-semibold mb-3">Website Portofolio</h4>
+            <p>Bangun portofolio profesional agar lebih dipercaya klien atau perusahaan yang ingin bekerja sama.</p>
+          </div>
+          <!-- Service 3 -->
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-2 animate__animated animate__zoomIn animate__delay-2s">
+            <h4 class="text-xl font-semibold mb-3">Sistem Informasi Sederhana</h4>
+            <p>Membuat aplikasi web sederhana untuk kebutuhan organisasi, UKM, atau kelompok belajar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-16 container mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-6 animate__animated animate__bounceIn">Kontak Saya</h3>
+      <p class="text-center mb-8 animate__animated animate__fadeInUp">Jika tertarik bekerja sama, silakan hubungi saya melalui:</p>
+      <div class="flex flex-col items-center space-y-3 animate__animated animate__jackInTheBox">
+        <p><strong>Email:</strong> dyophanshb@example.com</p>
+        <p><strong>WhatsApp:</strong> +62 812-3456-7890</p>
+        <a href="mailto:dyophanshb@example.com" 
+           class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
+           Kirim Email
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+      <p>&copy; 2025 D. Yophanci P - All Rights Reserved</p>
+    </footer>
+
+  </body>
+</html>
